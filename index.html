@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script type="text/javascript">
+  var imageURLs = [
+       "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\1.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\2.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\3.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\4.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\5.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\6.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\7.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\8.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\9.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\10.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\11.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\12.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\13.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\14.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\15.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\16.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\17.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\18.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\19.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\20.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\21.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\22.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\23.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\24.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\25.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\26.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\27.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\28.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\29.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\30.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\31.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\32.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\33.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\34.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\35.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\36.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\37.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\38.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\39.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\40.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\41.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\42.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\43.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\44.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\45.jpg"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\46.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\47.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\48.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\49.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\20.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\51.png"
+     , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\52.png"
+  ];
+  var imglist = [];
+
+  function getImageTag() {
+    for (;imglist.length < 9;){
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" alt=\"Some alt text\"/>\n';
+    var img2 = img;
+    if (!(imglist.includes(img2))) {
+        imglist.push(img);
+
+    }else{console.log(img2);console.log(imglist);}}
+    return imglist;
+  }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>$ cd ~</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="nanya.png">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="image">
+                <script type="text/javascript">
+                    document.write(getImageTag().join(""));
+                </script>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="head">
+                <p>gabriel@pcsus:~$ ls</p>
+            </div>
+
+            <div class="bookmarks">
+
+                <div class="category">
+                    <div class="links">
+                        <li class="title">social</li>
+                        <li><a href="https://twitter.com/home">twitter</a></li>
+                        <li><a href="https://www.reddit.com/">reddit</a></li>
+                        <li><a href="https://web.whatsapp.com/">whatsapp</a></li>
+                        <li><a href="https://civitai.com/">civitai</a></li>
+                        <li><a href="https://web.telegram.org/z/#-1640317065">telegram</a></li>
+                        <li><a href="https://myanimelist.net">myanimelist</a></li>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="links">
+                        <li class="title">play</li>
+                        <li><a href="https://www.youtube.com/feed/subscriptions">youtube</a></li>
+                        <li><a href="https://www.tiktok.com/">tiktok</a></li>
+                        <li><a href="https://twitch.tv/">twitch</a></li>
+                        <li><a href="https://netflix.com">netflix</a></li>
+                        <li><a href="https://play.hbomax.com/page/urn:hbo:page:home">hbomax</a></li>
+                        <li><a href="https://lamabao.ddns.net">lamabao</a></li>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="links">
+                        <li class="title">misc</li>
+                        <li><a href="https://gmail.com">gmail</a></li>
+                        <li><a href="https://github.com/">github</a></li>
+                        <li><a href="https://leetify.com/">leetify</a></li>
+                        <li><a href="https://shopee.com.br/">shopee</a></li>
+                        <li><a href="https://best.aliexpress.com/">aliexpress</a></li>
+                        <li><a href="http://localhost:7860">diffusion</a></li>
+                    </div>
+                </div>
+                
+            </div>
+            <!--<div class="head2">
+                <span>gabriel@pcsus:~$ search</span> 
+                <span id="AboutDevTypeText" class="typing"></span>
+                <form method="GET" action="https://www.google.com/search?q=">
+                    <input class="search-form" name="q" class="search-box" autofocus>
+                </form>
+        </div>-->
+    </div>
+</body>
+
+</html>

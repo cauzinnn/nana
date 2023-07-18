@@ -1,0 +1,144 @@
+:root {
+    --color-bg: #232634;
+    --color-fg: #dce0e8;
+    --color-link: #c6d0f5;
+    --color-link-visited: #c6d0f5;
+    --color-link-hover: #8caaee ;
+}
+
+html, body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  /*font-family: "Inconsolata", monospace;*/
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 24;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 750px 450px 1fr;
+  grid-template-areas:
+    ". left right .";
+  column-gap: 100px;
+  justify-items: center;
+  align-items: center;
+  min-height: 100%;
+  padding: 0
+}
+
+.left {
+  grid-area: left;
+  aspect-ratio: 1/1;
+  padding: 0px;
+}
+
+.right {
+  grid-area: right;
+  height: 30%;
+  width: 90%;
+  background-color: #303446;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  border: 2px solid #f2d5cf;
+}
+
+.image img {
+  margin-top: 5px;
+  max-width: 32%;
+  max-height: 50%;
+  border: 2px solid #f2d5cf;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 24px;
+  font-size: 15px;
+  padding-top: 10px;
+
+}
+
+.head2 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 24px;
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+.bookmarks {
+  display: flex;
+  justify-content: center;
+}
+
+.search-form {
+  width: 20rem;
+  outline: none;
+  border: none;
+  background-color: #303446;
+  color: #c9c9c9;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.title {
+  font-size: 25px;
+  padding-bottom: 7.5px;
+  color: #d8dee9;
+
+}
+
+li {
+  font-size:14px;
+  list-style-type: none;
+  padding: 5px;
+}
+
+a:link {
+  text-decoration: none;
+  color: var(--color-link);
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
