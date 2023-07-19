@@ -56,17 +56,34 @@
      , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\51.png"
      , "C:\\Users\\sussy\\Documents\\misc\\PROJETOS\\a\\anya\\nana\\52.png"
   ];
+  var b = Array.from(Array(57).keys())
+  var imageURLs2 = b.map(String)
+
   var imglist = [];
 
   function getImageTag() {
     for (;imglist.length < 9;){
-    var img = '<img src=\"';
+    var img = '<img src=\"\\nana\\';
     var randomIndex = Math.floor(Math.random() * imageURLs.length);
     img += imageURLs[randomIndex];
-    img += '\" alt=\"Some alt text\"/>\n';
+    img += '\" alt=\"deu merda putz\"/>\n';
     var img2 = img;
     if (!(imglist.includes(img2))) {
         imglist.push(img);
+
+    }else{console.log(img2);console.log(imglist);}}
+    return imglist;
+  }
+
+  function getImageTag2() {
+    for (;imglist.length < 9;){
+    var img = '<img src=\"nana\\';
+    var randomIndex = Math.floor(Math.random() * imageURLs2.length);
+    img += imageURLs2[randomIndex];
+    img += '.png\" alt=\"deu merda putz\"/>\n';
+    var img2 = img;
+    if (!(imglist.includes(img2))) {
+        imglist.push(img2);
 
     }else{console.log(img2);console.log(imglist);}}
     return imglist;
@@ -86,7 +103,7 @@
         <div class="left">
             <div class="image">
                 <script type="text/javascript">
-                    document.write(getImageTag().join(""));
+                    document.write(getImageTag2().join(""));
                 </script>
             </div>
         </div>
